@@ -1,0 +1,1 @@
+FROM t4pcommunity/python-bedrock-devcontainer:latest

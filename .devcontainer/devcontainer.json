@@ -1,0 +1,74 @@
+{
+  "name": "Integrating Generative AI Models into Your Apps with Amazon Bedrock",
+  "hostRequirements": {
+    "cpus": 4,
+    "memory": "16gb",
+    "storage": "32gb"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "charliermarsh.ruff",
+        "ms-python.mypy-type-checker",
+        "ms-python.python",
+        "ms-toolsai.vscode-jupyter-slideshow",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "explorer.compactFolders": false,
+        "terminal.integrated.tabs.enabled": false,
+        "editor.minimap.enabled": false,
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+        "files.autoSave": "afterDelay",
+        "workbench.startupEditor": "none",
+        "window.zoomLevel": 1,
+        "rust-analyzer.check.command": "clippy",
+        "rust-analyzer.rustfmt.extraArgs": [
+          "--config",
+          "max_width=100"
+        ],
+        "[markdown]": {
+          "editor.wordWrap": "on",
+          "editor.indentSize": 2,
+          "editor.rulers": []
+        },
+        "[python]": {
+          "editor.defaultFormatter": "charliermarsh.ruff",
+          "editor.formatOnSave": true,
+          "editor.tabSize": 4,
+          "editor.inlayHints.enabled": "on",
+          "editor.rulers": [
+            79
+          ]
+        },
+        "mypy-type-checker.severity": {
+          "error": "Error",
+          "warning": "Error",
+          "note": "Error",
+          "info": "Error"
+        },
+        "mypy-type-checker.args": [
+          "--config-file=.vscode/mypy.ini"
+        ],
+        "ruff.format.args": [
+          "--line-length",
+          "79"
+        ],
+        "ruff.lint.args": [
+          "--line-length",
+          "79",
+          "--select",
+          "E,F,W,N"
+        ]
+      }
+    }
+  },
+  "dockerFile": "Dockerfile"
+}
